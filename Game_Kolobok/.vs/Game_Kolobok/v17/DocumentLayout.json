@@ -1,58 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\",
+  "WorkspaceRootPath": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\grass_blade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\grass_blade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\tree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\shaders\\grass.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\grass.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\texture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\shaders\\grass.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\grass.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\shaders\\kolobok.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\kolobok.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\shaders\\simple.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\simple.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\shaders\\kolobok.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\kolobok.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\default.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\shaders\\simple.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\shaders\\simple.vert||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\simple.vert||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\source\\repos\\game_kolobok\\game_kolobok\\game_kolobok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\game_kolobok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\shaders\\simple.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\simple.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|c:\\users\\lesha\\computer-graphics\\game_kolobok\\game_kolobok\\shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E6FB8535-F13D-4CA4-B524-8EC02ED37EC7}|Game_Kolobok\\Game_Kolobok.csproj|solutionrelative:game_kolobok\\shaders\\default.frag||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,179 +42,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "default.frag",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\default.frag",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\default.frag",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\default.frag",
-              "RelativeToolTip": "Game_Kolobok\\Shaders\\default.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-19T21:49:00.26Z",
+              "DocumentIndex": 2,
+              "Title": "Texture.cs",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Texture.cs",
+              "RelativeDocumentMoniker": "Game_Kolobok\\Texture.cs",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Texture.cs",
+              "RelativeToolTip": "Game_Kolobok\\Texture.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T20:11:22.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "grass.frag",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\grass.frag",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\grass.frag",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\grass.frag",
-              "RelativeToolTip": "Game_Kolobok\\Shaders\\grass.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Title": "default.frag",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\default.frag",
+              "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\default.frag",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\default.frag",
+              "RelativeToolTip": "Game_Kolobok\\Shaders\\default.frag",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-19T21:48:54.234Z",
+              "WhenOpened": "2025-05-26T16:44:51.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tree.cs",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Tree.cs",
+              "RelativeDocumentMoniker": "Game_Kolobok\\Tree.cs",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Tree.cs",
+              "RelativeToolTip": "Game_Kolobok\\Tree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T19:26:49.707Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "default.vert",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\default.vert",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\default.vert",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\default.vert",
-              "RelativeToolTip": "Game_Kolobok\\Shaders\\default.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "kolobok.vert",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\kolobok.vert",
+              "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\kolobok.vert",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\kolobok.vert",
+              "RelativeToolTip": "Game_Kolobok\\Shaders\\kolobok.vert",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-19T21:48:42.385Z",
+              "WhenOpened": "2025-05-25T19:01:32.954Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "grass.vert",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\grass.vert",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\grass.vert",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\grass.vert",
-              "RelativeToolTip": "Game_Kolobok\\Shaders\\grass.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "kolobok.frag",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\kolobok.frag",
+              "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\kolobok.frag",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\kolobok.frag",
+              "RelativeToolTip": "Game_Kolobok\\Shaders\\kolobok.frag",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwCAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-05-19T21:48:36.53Z",
+              "WhenOpened": "2025-05-25T19:01:48.057Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "simple.vert",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.vert",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.vert",
               "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\simple.vert",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.vert",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.vert",
               "RelativeToolTip": "Game_Kolobok\\Shaders\\simple.vert",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-05-19T21:48:26.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "simple.frag",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.frag",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.frag",
               "RelativeDocumentMoniker": "Game_Kolobok\\Shaders\\simple.frag",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.frag",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Shaders\\simple.frag",
               "RelativeToolTip": "Game_Kolobok\\Shaders\\simple.frag",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-05-19T21:48:19.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Game_Kolobok",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Game_Kolobok.csproj",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
-              "RelativeToolTip": "Game_Kolobok\\Game_Kolobok.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-19T21:33:02.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Shader.cs",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shader.cs",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Shader.cs",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Shader.cs",
-              "RelativeToolTip": "Game_Kolobok\\Shader.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAtwEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T21:32:35.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Texture.cs",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Texture.cs",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Texture.cs",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Texture.cs",
-              "RelativeToolTip": "Game_Kolobok\\Texture.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T21:32:16.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Grass_Blade.cs",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Grass_Blade.cs",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Grass_Blade.cs",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Grass_Blade.cs",
-              "RelativeToolTip": "Game_Kolobok\\Grass_Blade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T21:31:50.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Tree.cs",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Tree.cs",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Tree.cs",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Tree.cs",
-              "RelativeToolTip": "Game_Kolobok\\Tree.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T21:31:30.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Game.cs",
+              "DocumentMoniker": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Game.cs",
               "RelativeDocumentMoniker": "Game_Kolobok\\Game.cs",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Game.cs",
+              "ToolTip": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Game.cs",
               "RelativeToolTip": "Game_Kolobok\\Game.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAArwBkAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T21:31:03.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Program.cs",
-              "RelativeDocumentMoniker": "Game_Kolobok\\Program.cs",
-              "ToolTip": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Program.cs",
-              "RelativeToolTip": "Game_Kolobok\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T21:30:15.269Z",
               "EditorCaption": ""
             }
           ]

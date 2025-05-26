@@ -452,11 +452,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
+      "projectUniqueName": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
       "projectName": "Game_Kolobok",
-      "projectPath": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
+      "projectPath": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
       "packagesPath": "C:\\Users\\lesha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\obj\\",
+      "outputPath": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

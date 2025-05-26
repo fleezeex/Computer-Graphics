@@ -42,6 +42,10 @@ namespace KolobokGame
         private Shader _kolobokShader;
         private Shader _treeShader;
 
+        private int _sphereVAO, _sphereVBO, _sphereEBO;
+        private int _sphereVerticesCount;
+
+
         public Game(int width, int height) : base
             (GameWindowSettings.Default, NativeWindowSettings.Default)
         { }
@@ -54,11 +58,33 @@ namespace KolobokGame
             GL.Enable(EnableCap.DepthTest);
 
             _shader = new Shader("default.vert", "default.frag");
-            _kolobokShader = new Shader("simple.vert", "simple.frag");
+            _kolobokShader = new Shader("kolobok.vert", "kolobok.frag");
             _grassShader = new Shader("grass.vert", "grass.frag");
             _treeShader = new Shader("simple.vert", "simple.frag");
 
+            SetupGround();
+            SetupSphere();
+            GenerateGrass();
+            GenerateTrees(200);
 
+            var projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45f), Size.X / (float)Size.Y, 0.1f, 100f);
+
+            _shader.Use();
+            _shader.SetMatrix4("projection", projection);
+
+            _kolobokShader.Use();
+            _kolobokShader.SetMatrix4("projection", projection);
+
+            _grassShader.Use();
+            _grassShader.SetMatrix4("projection", projection);
+
+            _treeShader.Use();
+            _treeShader.SetMatrix4("projection", projection);
+        }
+
+
+        private void SetupGround()
+        {
             _groundVAO = GL.GenVertexArray();
             _groundVBO = GL.GenBuffer();
             _groundEBO = GL.GenBuffer();
@@ -77,22 +103,6 @@ namespace KolobokGame
             GL.EnableVertexAttribArray(2);
 
             _groundTexture = new Texture("ground.jpg");
-            GenerateGrass();
-            GenerateTrees(200);
-
-            var projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.DegreesToRadians(45f), Size.X / (float)Size.Y, 0.1f, 100f);
-
-            _shader.Use();
-            _shader.SetMatrix4("projection", projection);
-
-            _kolobokShader.Use();
-            _kolobokShader.SetMatrix4("projection", projection);
-
-            _grassShader.Use();
-            _grassShader.SetMatrix4("projection", projection);
-
-            _treeShader.Use();
-            _treeShader.SetMatrix4("projection", projection);
         }
 
         private void GenerateTrees(int count)
@@ -112,7 +122,7 @@ namespace KolobokGame
                         0,
                         z
                     ),
-                    TrunkHeight = (float)(_random.NextDouble() * 0.5 + 1.8f),
+                    TrunkHeight = (float)(_random.NextDouble() * -0.5 + 1.8f),
                     TrunkRadius = (float)(_random.NextDouble() * 0.1 + 0.25f),
                     FoliageRadius = (float)(_random.NextDouble() * 0.3 + 1.2f)
                 });
@@ -123,7 +133,7 @@ namespace KolobokGame
         {
             _grassBlades.Clear();
             float fieldWidth = 90f;
-            float startZ = 10.0f; 
+            float startZ = 10.0f;
             float endZ = -600f;
 
             for (int i = 0; i < GrassCount; i++)
@@ -169,8 +179,8 @@ namespace KolobokGame
 
             var cameraPos = _kolobokPosition + _cameraOffset;
             var view = Matrix4.LookAt(cameraPos, _kolobokPosition, Vector3.UnitY);
+            var lightPos = new Vector3(10f, 15f, 5f);
 
-           
             _shader.Use();
             _shader.SetMatrix4("view", view);
             GL.BindVertexArray(_groundVAO);
@@ -179,37 +189,42 @@ namespace KolobokGame
             _shader.SetMatrix4("model", Matrix4.Identity);
             GL.DrawElements(PrimitiveType.Triangles, _groundIndices.Length, DrawElementsType.UnsignedInt, 0);
 
-
             _grassShader.Use();
             _grassShader.SetMatrix4("view", view);
             RenderGrass();
-
 
             _treeShader.Use();
             _treeShader.SetMatrix4("view", view);
             foreach (var tree in _trees)
             {
-
                 _treeShader.SetVector3("objectColor", new Vector3(0.5f, 0.3f, 0.1f));
                 var trunkModel = Matrix4.CreateScale(tree.TrunkRadius, tree.TrunkHeight, tree.TrunkRadius) *
-                               Matrix4.CreateTranslation(tree.Position + new Vector3(0, tree.TrunkHeight / 2 + tree.YOffset, 0));
+                               Matrix4.CreateTranslation(tree.Position + new Vector3(0, tree.TrunkHeight / 2 - 1.4f, 0));
                 _treeShader.SetMatrix4("model", trunkModel);
                 DrawCylinder(8);
 
-
                 _treeShader.SetVector3("objectColor", new Vector3(0.1f, 0.6f, 0.2f));
                 var foliageModel = Matrix4.CreateScale(tree.FoliageRadius) *
-                                  Matrix4.CreateTranslation(tree.Position + new Vector3(0, tree.TrunkHeight + tree.FoliageRadius / 2 + tree.YOffset, 0));
+                                 Matrix4.CreateTranslation(tree.Position + new Vector3(0, tree.TrunkHeight + tree.FoliageRadius / 2, 0));
                 _treeShader.SetMatrix4("model", foliageModel);
-                DrawSphere(tree.FoliageRadius / 2, 10, 10);
+                DrawSphere(1.0f, 10, 10);
             }
 
             _kolobokShader.Use();
             _kolobokShader.SetMatrix4("view", view);
-            var model = Matrix4.CreateTranslation(_kolobokPosition);
+            _kolobokShader.SetVector3("viewPos", cameraPos);
+            _kolobokShader.SetVector3("lightPos", lightPos);
+            _kolobokShader.SetVector3("lightColor", Vector3.One);
+
+            var model = Matrix4.CreateScale(_kolobokRadius) *
+                       Matrix4.CreateTranslation(_kolobokPosition);
+
             _kolobokShader.SetMatrix4("model", model);
             _kolobokShader.SetVector3("objectColor", new Vector3(1.0f, 0.9f, 0.2f));
-            DrawSphere(_kolobokRadius, 20, 20);
+
+            GL.BindVertexArray(_sphereVAO);
+            GL.DrawElements(PrimitiveType.Triangles, _sphereVerticesCount, DrawElementsType.UnsignedInt, 0);
+            GL.BindVertexArray(0);
 
             SwapBuffers();
         }
@@ -230,6 +245,109 @@ namespace KolobokGame
                 GL.Vertex3(x, 0, z);
             }
             GL.End();
+        }
+
+        private void SetupSphere()
+        {
+            const int rings = 32;
+            const int sectors = 32;
+            const float radius = 1.0f;
+
+            List<Vector3> positions = new List<Vector3>();
+            List<Vector3> normals = new List<Vector3>();
+            List<uint> indices = new List<uint>();
+
+            for (int i = 0; i <= rings; i++)
+            {
+                float lat = MathHelper.PiOver2 - i * MathHelper.Pi / rings;
+                float y = radius * MathF.Sin(lat);
+                float r = radius * MathF.Cos(lat);
+
+                for (int j = 0; j <= sectors; j++)
+                {
+                    float lng = j * MathHelper.TwoPi / sectors;
+                    float x = r * MathF.Sin(lng);
+                    float z = r * MathF.Cos(lng);
+
+                    positions.Add(new Vector3(x, y, z));
+                    normals.Add(new Vector3(x, y, z).Normalized());
+                }
+            }
+
+            for (int i = 0; i < rings; i++)
+            {
+                for (int j = 0; j < sectors; j++)
+                {
+                    uint first = (uint)(i * (sectors + 1) + j);
+                    uint second = first + (uint)sectors + 1;
+
+                    indices.Add(first);
+                    indices.Add(second);
+                    indices.Add(first + 1);
+
+                    indices.Add(second);
+                    indices.Add(second + 1);
+                    indices.Add(first + 1);
+                }
+            }
+
+            _sphereVerticesCount = indices.Count;
+
+            float[] interleaved = new float[positions.Count * 6];
+            for (int i = 0; i < positions.Count; i++)
+            {
+                interleaved[i * 6] = positions[i].X;
+                interleaved[i * 6 + 1] = positions[i].Y;
+                interleaved[i * 6 + 2] = positions[i].Z;
+                interleaved[i * 6 + 3] = normals[i].X;
+                interleaved[i * 6 + 4] = normals[i].Y;
+                interleaved[i * 6 + 5] = normals[i].Z;
+            }
+
+            _sphereVAO = GL.GenVertexArray();
+            GL.BindVertexArray(_sphereVAO);
+
+            _sphereVBO = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ArrayBuffer, _sphereVBO);
+            GL.BufferData(BufferTarget.ArrayBuffer, interleaved.Length * sizeof(float), interleaved, BufferUsageHint.StaticDraw);
+
+            _sphereEBO = GL.GenBuffer();
+            GL.BindBuffer(BufferTarget.ElementArrayBuffer, _sphereEBO);
+            GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Count * sizeof(uint), indices.ToArray(), BufferUsageHint.StaticDraw);
+
+            GL.EnableVertexAttribArray(0);
+            GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 0);
+
+            GL.EnableVertexAttribArray(1);
+            GL.VertexAttribPointer(1, 3, VertexAttribPointerType.Float, false, 6 * sizeof(float), 3 * sizeof(float));
+
+            GL.BindVertexArray(0);
+        }
+
+        private void DrawSphere(float radius, int segments, int rings)
+        {
+            for (int i = 0; i <= rings; i++)
+            {
+                double lat0 = Math.PI * (-0.5 + (double)(i - 1) / rings);
+                double z0 = Math.Sin(lat0) * radius;
+                double zr0 = Math.Cos(lat0) * radius;
+
+                double lat1 = Math.PI * (-0.5 + (double)i / rings);
+                double z1 = Math.Sin(lat1) * radius;
+                double zr1 = Math.Cos(lat1) * radius;
+
+                GL.Begin(PrimitiveType.TriangleStrip);
+                for (int j = 0; j <= segments; j++)
+                {
+                    double lng = 2 * Math.PI * (double)(j - 1) / segments;
+                    double x = Math.Cos(lng);
+                    double y = Math.Sin(lng);
+
+                    GL.Vertex3(x * zr0, y * zr0, z0);
+                    GL.Vertex3(x * zr1, y * zr1, z1);
+                }
+                GL.End();
+            }
         }
 
         private void RenderGrass()
@@ -256,32 +374,6 @@ namespace KolobokGame
                 GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StreamDraw);
 
                 GL.DrawArrays(PrimitiveType.Triangles, 0, 6);
-            }
-        }
-
-        private void DrawSphere(float radius, int segments, int rings)
-        {
-            for (int i = 0; i <= rings; i++)
-            {
-                double lat0 = Math.PI * (-0.5 + (double)(i - 1) / rings);
-                double z0 = Math.Sin(lat0) * radius;
-                double zr0 = Math.Cos(lat0) * radius;
-
-                double lat1 = Math.PI * (-0.5 + (double)i / rings);
-                double z1 = Math.Sin(lat1) * radius;
-                double zr1 = Math.Cos(lat1) * radius;
-
-                GL.Begin(PrimitiveType.TriangleStrip);
-                for (int j = 0; j <= segments; j++)
-                {
-                    double lng = 2 * Math.PI * (double)(j - 1) / segments;
-                    double x = Math.Cos(lng);
-                    double y = Math.Sin(lng);
-
-                    GL.Vertex3(x * zr0, y * zr0, z0);
-                    GL.Vertex3(x * zr1, y * zr1, z1);
-                }
-                GL.End();
             }
         }
 
@@ -347,6 +439,7 @@ namespace KolobokGame
             GL.DeleteVertexArray(_groundVAO);
             GL.DeleteBuffer(_groundVBO);
             GL.DeleteBuffer(_groundEBO);
+
             _groundTexture.Dispose();
             _shader.Dispose();
             _kolobokShader.Dispose();

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Game_Kolobok")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6de6871671a874b2216208a1fb878fee5aa6d7ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("Game_Kolobok")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Game_Kolobok")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

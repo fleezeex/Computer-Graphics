@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wpF3Dq08+Zk=",
+  "dgSpecHash": "aXeWGojK9fQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lesha\\source\\repos\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
+  "projectFilePath": "C:\\Users\\lesha\\Computer-Graphics\\Game_Kolobok\\Game_Kolobok\\Game_Kolobok.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lesha\\.nuget\\packages\\opentk\\4.9.4\\opentk.4.9.4.nupkg.sha512",
     "C:\\Users\\lesha\\.nuget\\packages\\opentk.audio.openal\\4.9.4\\opentk.audio.openal.4.9.4.nupkg.sha512",
